@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                
+            </div>
+
+            <div class="links">
+                <div class="link"><a href="main.html">Home</a></div>
+                <div class="link"><a href="tools.html">Tools</a></div>
+                <div class="link contact-btn"><a href="tools.html">Back</a></div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+        
+            <div class="content">
+                <h1>Simple <span>Calculator</span></h1>
+
+                <p>Enter two numbers:</p>
+
+                First Number:<br>
+                <input type="number" id="no1" placeholder="Enter first number">
+                <br><br>
+
+                Second Number:<br>
+                <input type="number" id="no2" placeholder="Enter second number">
+                <br><br>
+
+                Result:<br>
+                <input type="number" id="result">
+                <br><br>
+
+               <div class="button-group">
+                   <button onclick="addNum()">Add</button>
+                   <button onclick="subNum()">Subtract</button>
+                   <button onclick="mulNum()">Multiply</button>
+                   <button onclick="divNum()">Divide</button>
+                   <button class="clear" onclick="clearAll()">Clear All</button>
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
